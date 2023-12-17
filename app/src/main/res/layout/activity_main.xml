@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+
+<ImageView
+    android:id="@+id/yellowiconimage"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:src="@drawable/yellowicon"
+    android:scaleType="fitXY"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="20dp"
+    android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/textwithyellowimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/yellowiconimage"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/unblast"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/hrstext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/yellowiconimage"
+        app:layout_constraintTop_toBottomOf="@id/textwithyellowimage"
+        android:layout_marginStart="10dp"
+        android:text="@string/_2_hrs"
+        />
+    <ImageView
+        android:id="@+id/worldballiconimage"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        app:layout_constraintTop_toBottomOf="@id/textwithyellowimage"
+        app:layout_constraintStart_toEndOf="@id/hrstext"
+        android:src="@drawable/world_icon"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/todo" />
+    <ImageView
+        android:id="@+id/threepointsiconimage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/threepoints"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/textunderyellowicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/yellowiconimage"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/buckle_up_because_change_is_coming_to_wordpress"
+        android:textColor="@color/black"
+        android:layout_marginStart="14dp"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"/>
+    <TextView
+        android:id="@+id/linkundercaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textunderyellowicon"
+        android:layout_marginStart="17dp"
+        android:text="@string/link"
+        android:textColor="#3F51B5"
+       />
+    <ImageView
+        android:id="@+id/yellowimage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/yellowimage"
+        app:layout_constraintTop_toBottomOf="@id/linkundercaption"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scaleType="fitXY"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/todo" />
+
+    <ImageView
+        android:id="@+id/likeimage"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/like"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yellowimage"
+        android:scaleType="fitXY"
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="10dp"
+        android:contentDescription="@string/todo" />
+    <TextView
+        android:id="@+id/textnumberlike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/likeimage"
+        app:layout_constraintTop_toBottomOf="@id/yellowimage"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="4dp"
+        android:text="@string/_12"/>
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="15dp"
+        android:layout_height="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/yellowimage"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/arrow2"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/todo" />
+
+    <ImageView
+        android:id="@+id/yellowiconimageunderimage"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintTop_toBottomOf="@id/yellowimage"
+        app:layout_constraintEnd_toStartOf="@id/arrow"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/yellowicon"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/yellowimage"
+        app:layout_constraintEnd_toStartOf="@id/yellowiconimageunderimage"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/_1_share"
+        android:textSize="16sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="30"
+        app:layout_constraintTop_toBottomOf="@id/yellowiconimageunderimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:baselineAligned="false">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="10">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:src="@drawable/like2"
+            android:layout_marginStart="25dp"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/like"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10">
+
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="40dp"
+                android:src="@drawable/commenticon"
+                android:layout_marginStart="20dp"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comment"
+                android:layout_gravity="center"
+                android:layout_marginStart="7dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="35dp"
+                android:src="@drawable/share"
+                android:layout_marginStart="25dp"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/share"
+                android:layout_gravity="center"
+                 />
+        </FrameLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

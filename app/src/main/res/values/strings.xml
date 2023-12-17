@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Post_Item_task_2</string>
+    <string name="_12">12</string>
+    <string name="unblast">Unblast</string>
+    <string name="_2_hrs">2 hrs .</string>
+    <string name="buckle_up_because_change_is_coming_to_wordpress">Buckle Up, because change is coming to WordPress</string>
+    <string name="link">http://unblast.com/color-schemes</string>
+    <string name="todo">TODO</string>
+    <string name="_1_share">1 Share</string>
+    <string name="like">Like</string>
+    <string name="comment">Comment</string>
+    <string name="share">Share</string>
+</resources>
